@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/cam_preview"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:background="#7000">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:src="@drawable/ic_screen_rotation_black_24dp"
+            android:tint="#ffffff"
+            android:padding="10dp"
+            android:id="@+id/rotational_state"
+            android:onClick="lockOrientation"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:src ="@drawable/ic_camera_black_24dp"
+            android:tint="#fff"
+            android:onClick="clickPicture"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:src="@drawable/ic_camera_front_black_24dp"
+            android:tint="#ffffff"
+            android:padding="10dp"
+            android:id="@+id/switch_camera"
+            android:layout_alignParentBottom="true"
+            android:onClick="switchCamera"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>
